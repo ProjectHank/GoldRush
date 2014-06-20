@@ -1,4 +1,4 @@
-package com.example.exampleMod;
+/*package com.example.exampleMod;
 
 import static org.junit.Assert.*;
 
@@ -12,3 +12,4 @@ public class ExampleTest {
 	}
 
 }
+*/
