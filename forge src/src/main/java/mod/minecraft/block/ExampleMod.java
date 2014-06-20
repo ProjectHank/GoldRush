@@ -36,6 +36,7 @@ public class ExampleMod
     public static Block iAcaciaBlock;
     public static Block iBirchBlock;
     public static Block iGlassBlock;
+    public static Block CurrencyBlock;
     
     @EventHandler
     public void load(FMLInitializationEvent event) {
@@ -99,6 +100,16 @@ public class ExampleMod
 			.setCreativeTab(CreativeTabs.tabBlock)
 			.setBlockTextureName(MODID + ":" + "iGlassBlock");
     	GameRegistry.registerBlock(iGlassBlock, "iGlassBlock");
+    	
+    	// Indestructible Glass Block
+    	CurrencyBlock = new CurrencyBlock(Material.ground)
+			.setHardness(1F)
+			.setResistance(6000F)
+			.setStepSound(Block.soundTypeMetal)
+			.setBlockName("CurrencyBlock")
+			.setCreativeTab(CreativeTabs.tabBlock)
+			.setBlockTextureName(MODID + ":" + "CurrencyBlock");
+    	GameRegistry.registerBlock(CurrencyBlock, "CurrencyBlock");
     }
     	
 }
