@@ -37,23 +37,18 @@ public class EntityTrader extends EntityVillager{
 	}
 	
 	@Override
-	public boolean interact(EntityPlayer par1EntityPlayer)
-    {
+	public boolean interact(EntityPlayer par1EntityPlayer){
         ItemStack itemstack = par1EntityPlayer.inventory.getCurrentItem();
         boolean flag = itemstack != null && itemstack.getItem() == Items.spawn_egg;
 
-        if (!flag && this.isEntityAlive() && !this.isTrading() && !this.isChild() && !par1EntityPlayer.isSneaking())
-        {
-            if (!this.worldObj.isRemote)
-            {
+        if (!flag && this.isEntityAlive() && !this.isTrading() && !this.isChild() && !par1EntityPlayer.isSneaking()){
+            if (!this.worldObj.isRemote){
                 this.setCustomer(par1EntityPlayer);
                 par1EntityPlayer.displayGUIMerchant(this, "Hank");
             }
-
             return true;
         }
-        else
-        {
+        else{
             return super.interact(par1EntityPlayer);
         }
     }
@@ -66,6 +61,4 @@ public class EntityTrader extends EntityVillager{
 		
 		return par1EntityLivingData;
 	}
-	
-	
 }
