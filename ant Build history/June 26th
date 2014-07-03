@@ -1,0 +1,12 @@
+
+
+farnsworth@farnsworth-L702X ~/Documents/Software Development/GoldRush/trunk/forge src/src $ ant
+Buildfile: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/build.xml
+
+init:
+
+build:
+     [echo] Building Minecraft
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
