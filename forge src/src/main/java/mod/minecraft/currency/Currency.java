@@ -22,6 +22,9 @@ public class Currency {
 	public static final String modid = "Currency";
 	
 	@EventHandler
+	/*Create a money block, note in most recent code uses, the money block has been 
+	* update the block has been replaced with existing MC item gold nugget
+	* for simplicities sake code is left incase we decide to switch back */
 	public void init(FMLInitializationEvent event) {
 		Block moneyBlock = new MoneyBlock(Material.ground)
 		.setCreativeTab(CreativeTabs.tabMisc)
@@ -37,28 +40,28 @@ public class Currency {
 
 	}
 	
-
+// this method counts all nuggets in player inventory including multiple stacks
 	public int getCurrency() {
 		Minecraft mc = Minecraft.getMinecraft();
-		int numGoldNuggets = 0;
+		int nuggetCount = 0;
 		
 		for (int i = 0; i < mc.thePlayer.inventory.getSizeInventory(); i++) 
 			if (mc.thePlayer.inventory.getStackInSlot(i) != null)
 				if (mc.thePlayer.inventory.getStackInSlot(i).getItem().getUnlocalizedName().equals(Items.gold_nugget.getUnlocalizedName())) 
-					numGoldNuggets += mc.thePlayer.inventory.getStackInSlot(i).stackSize;
+					nuggetCount += mc.thePlayer.inventory.getStackInSlot(i).stackSize;
 		
-		System.out.println(numGoldNuggets);
+		System.out.println(nuggetCount);
 			
 		return 0;
 	}
 	
 }
 
-/*
+/* Potentially useful methods/MC jargon: 
  * //Item item = new Item();
  * 
 boolean hasitem = mc.thePlayer.inventory.hasItem(item);
 itemstack = mc.thePlayer.inventory.decrStackSize(1,1);
-//ItemStack blahhh = mc.thePlayer.inventory.
-ItemStack blahhhh mc.thePlayer.inventory.getStackInSlot(this.thePlayer.inventory.currentItem)
+//ItemStack stack1 = mc.thePlayer.inventory.
+ItemStack stack2 mc.thePlayer.inventory.getStackInSlot(this.thePlayer.inventory.currentItem)
 */
