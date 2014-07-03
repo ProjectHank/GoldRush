@@ -13,8 +13,6 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 /** Exmample Mod -- Class that loads all of our custom classes into Minecraft.
  * 
  * @author Tyler McKillop
- * @param MODID = "examplemod"
- * @param VERSION = "1.0"
  * @version July 1, 2014
  */
 @Mod(modid = ExampleMod.MODID, version = ExampleMod.VERSION)
