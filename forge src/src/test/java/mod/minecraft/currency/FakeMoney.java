@@ -1,9 +1,11 @@
 package mod.minecraft.currency;
 
-public class FakeMoney extends FakeItem{
+import net.minecraft.item.Item;
+
+public class FakeMoney extends Item{
 
 	@Override
-	public String getFakeUnlocalizedName(){
+	public String getUnlocalizedName(){
 		return "goldNugget";
 	}
 	

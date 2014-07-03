@@ -7,15 +7,13 @@ import net.minecraft.item.ItemStack;
 
 import org.junit.Test;
 
-import cpw.mods.fml.common.registry.GameData;
-
 public class TestCurrency extends TestCase {
 	
 	FakeInventory inventory = new FakeInventory();
+	FakeMoney gold_nugget = new FakeMoney();
+	FakeEmerald emerald = new FakeEmerald();
 	
 	public void testgetCurrency() {
-		FakeMoney gold_nugget = new FakeMoney();
-		FakeEmerald emerald = new FakeEmerald();
 		
 		//Adding non-currency items
 		inventory.setInventorySlotContents(1, new ItemStack(emerald,10));
@@ -37,7 +35,7 @@ public class TestCurrency extends TestCase {
 
 		for (int i = 0; i < inventory.getSizeInventory(); i++) 
 			if (inventory.getStackInSlot(i) != null) {
-				if (((FakeItem) inventory.getStackInSlot(i).getItem()).getFakeUnlocalizedName().equals("goldNugget")) 
+				if ((inventory.getStackInSlot(i).getItem()).getUnlocalizedName().equals(gold_nugget.getUnlocalizedName())) 
 					numGoldNuggets += inventory.getStackInSlot(i).stackSize;
 			}
 		return numGoldNuggets;

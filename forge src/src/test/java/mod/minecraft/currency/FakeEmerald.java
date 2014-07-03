@@ -1,9 +1,11 @@
 package mod.minecraft.currency;
 
-public class FakeEmerald extends FakeItem {
+import net.minecraft.item.Item;
+
+public class FakeEmerald extends Item {
 
 	@Override
-	public String getFakeUnlocalizedName(){
+	public String getUnlocalizedName(){
 		return "emerald";
 	}
 }
