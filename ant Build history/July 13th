@@ -1,0 +1,13 @@
+farnsworth@farnsworth-L702X ~/Documents/Software Development/GoldRush/trunk/forge src/src $ date
+Sun Jul 13 14:50:36 ADT 2014
+farnsworth@farnsworth-L702X ~/Documents/Software Development/GoldRush/trunk/forge src/src $ ant
+Buildfile: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/build.xml
+
+init:
+
+build:
+     [echo] Building Minecraft
+    [javac] Compiling 3 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+
+BUILD SUCCESSFUL
+Total time: 1 second

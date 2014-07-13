@@ -1,0 +1,22 @@
+farnsworth@farnsworth-L702X ~/Documents/Software Development/GoldRush/trunk/forge src/src $ ant
+Buildfile: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/build.xml
+
+init:
+     [copy] Copying 7 files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+     [copy] Copying 1 file to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/resources
+
+build:
+     [echo] Building Minecraft
+    [javac] Compiling 16 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/Trader.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/VillagerHandler.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+
+farnsworth@farnsworth-L702X ~/Documents/Software Development/GoldRush/trunk/forge src/src $ date
+Mon Jul  7 20:21:45 ADT 2014
+
+
