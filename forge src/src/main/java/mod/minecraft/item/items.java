@@ -6,6 +6,8 @@ import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -19,14 +21,14 @@ public class items {
 	
 	@Instance(items.MODID)
 	public static items bucketitem;
-	
+	    
 	@EventHandler
 	public void init(FMLInitializationEvent event){
 		BucketGoldFinder = new itemBucketGoldFinder(Block.getBlockFromItem(BucketGoldFinder))
 		.setMaxStackSize(1)
+		
         .setUnlocalizedName("bucketgoldfinder");
 		GameRegistry.registerItem(BucketGoldFinder, MODID); 
-		MinecraftForge.EVENT_BUS.register(new FillBucket());
 	}
 	
 	public static Item BucketGoldFinder;
