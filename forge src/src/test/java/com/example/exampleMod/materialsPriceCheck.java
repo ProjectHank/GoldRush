@@ -1,5 +1,6 @@
 //Unit test for materials price, psuedocode until items are created
-/*package com.example.exampleMod;
+/*
+package com.example.exampleMod;
 
 import static org.junit.Assert.*;
 
@@ -28,7 +29,9 @@ public class materialsPriceCheck {
 		 org.junit.Assert.assertTrue("Steak fails",x.getPriceBuy(steak)>x.getPriceSell(steak));
 		 org.junit.Assert.assertTrue("Bread fails",x.getPriceBuy(bread)>x.getPriceSell(bread));
 		 
+	
 	}
 
 }
 */
+

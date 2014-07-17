@@ -1,5 +1,6 @@
 package mod.minecraft.currency;
 
+
 import static org.junit.Assert.*;
 import junit.framework.TestCase;
 import net.minecraft.init.Items;
@@ -13,6 +14,7 @@ public class TestCurrency extends TestCase {
 	FakeMoney gold_nugget = new FakeMoney();
 	FakeEmerald emerald = new FakeEmerald();
 	
+	@Test
 	public void testgetCurrency() {
 		
 		//Adding non-currency items
