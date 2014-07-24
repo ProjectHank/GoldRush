@@ -24,9 +24,10 @@ public class goldNuggetGen {
 	public void checkForNugget(){
 		Minecraft mc = Minecraft.getMinecraft();
 		int nuggetCount = 0;
-		//Create random num generator. 1/20 chance of Getting a Nugget.
+		//Create random num generator. 1/40 chance of Getting a Nugget.
+		System.println("Gold Proc");
 		Random randGen = new Random();
-		int randNum = randGen.nextInt(20);
+		int randNum = randGen.nextInt(40);
 		boolean done= false; // to keep track of if nugget is added
 		System.out.println(randNum);
 		//If number is correct, search inventory for gold nugget stack

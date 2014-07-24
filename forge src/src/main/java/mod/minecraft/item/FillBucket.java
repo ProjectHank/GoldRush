@@ -46,6 +46,7 @@ public class FillBucket {
     		return null;
     	}
     	else
-    		return new ItemStack(bucket);
+		goldNuggetGen.checkForNugget();    		
+		return new ItemStack(bucket);
     }
 }
