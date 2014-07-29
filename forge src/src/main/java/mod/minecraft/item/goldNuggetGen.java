@@ -21,11 +21,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import java.util.Random;
 
 public class goldNuggetGen {
-	public void checkForNugget(){
+	public static void checkForNugget(){
 		Minecraft mc = Minecraft.getMinecraft();
 		int nuggetCount = 0;
 		//Create random num generator. 1/40 chance of Getting a Nugget.
-		System.println("Gold Proc");
+		System.out.println("Gold Proc");
 		Random randGen = new Random();
 		int randNum = randGen.nextInt(40);
 		boolean done= false; // to keep track of if nugget is added

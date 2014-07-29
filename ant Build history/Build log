@@ -1,0 +1,95 @@
+JULY 27th
+
+ant clean test
+Buildfile: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/build.xml
+
+clean:
+   [delete] Deleting directory /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build
+
+init:
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/resources
+     [copy] Copying 7 files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+     [copy] Copying 1 file to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/resources
+     [copy] Copying 32 files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+
+build:
+     [echo] Building Minecraft
+    [javac] Compiling 20 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/Trader.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/VillagerHandler.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+buildTests:
+     [echo] Testing Minecraft
+    [javac] Compiling 8 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+
+test:
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/test-results
+    [junit] Running mod.minecraft.currency.FakeEmerald
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+    [junit] Test mod.minecraft.currency.FakeEmerald FAILED
+    [junit] Running mod.minecraft.currency.FakeInventory
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+    [junit] Test mod.minecraft.currency.FakeInventory FAILED
+    [junit] Running mod.minecraft.currency.FakeMoney
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+    [junit] Test mod.minecraft.currency.FakeMoney FAILED
+    [junit] Running mod.minecraft.currency.TestCurrency
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+    [junit] Running mod.minecraft.currency.TestGoldPanning
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+JULY 29th 
+
+ant clean test
+Buildfile: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/build.xml
+
+clean:
+   [delete] Deleting directory /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build
+
+init:
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/resources
+     [copy] Copying 7 files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+     [copy] Copying 1 file to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/resources
+     [copy] Copying 32 files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+
+build:
+     [echo] Building Minecraft
+    [javac] Compiling 20 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/main
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/Trader.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/src/main/java/mod/minecraft/npc/VillagerHandler.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+buildTests:
+     [echo] Testing Minecraft
+    [javac] Compiling 8 source files to /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/classes/test
+
+test:
+    [mkdir] Created dir: /home/farnsworth/Documents/Software Development/GoldRush/trunk/forge src/build/test-results
+    [junit] Running mod.minecraft.currency.FakeEmerald
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec
+    [junit] Test mod.minecraft.currency.FakeEmerald FAILED
+    [junit] Running mod.minecraft.currency.FakeInventory
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+    [junit] Test mod.minecraft.currency.FakeInventory FAILED
+    [junit] Running mod.minecraft.currency.FakeMoney
+    [junit] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+    [junit] Test mod.minecraft.currency.FakeMoney FAILED
+    [junit] Running mod.minecraft.currency.TestCurrency
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+    [junit] Running mod.minecraft.currency.TestGoldPanning
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+
+
